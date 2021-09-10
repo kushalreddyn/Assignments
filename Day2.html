@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ESSENTIALS</title>
+    </head>
+    <body>
+        <h1>Binary Operations</h1>
+
+
+
+        <script>
+
+            //Create two number variables and perform all kinds of binary operation on them
+
+            var a=10;
+            var b=20;
+            console.log(`a+b = ${a+b}`);
+            console.log(`a-b = ${a-b}`);
+            console.log(`a*b = ${a*b}`);
+            console.log(`a/b = ${a/b}`);
+            console.log(`a%b = ${a%b}`);
+            a+=b;
+            console.log(`a= ${a} b= ${b}`);
+            a-=b;
+            console.log(`a= ${a} b= ${b}`);
+            a*=b;
+            console.log(`a= ${a} b= ${b}`);
+            a/=b;
+            console.log(`a= ${a} b= ${b}`);
+            a%=b;
+            console.log(`a= ${a} b= ${b}`);
+            if(a>b)
+            {
+                console.log("a greater than b");
+            }
+            else if(a<b)
+            {
+                console.log("a lesser than b");
+            }
+            else if(a==b)
+            {
+                console.log("a is equal to b");
+            }
+            var c=1100;
+            if(a>b&&a<c)
+            {
+                console.log("a is between b and c");
+            }
+            if(a>b||a<c)
+            {
+                console.log("a is either greater than b, c or both")
+            }
+            if(!(a>b))
+            {
+                console.log("a is not greater than b");
+            }
+
+            //Create a array with 10 numbers and print only the even numbers with a loop from that array
+
+            let data=[1,2,3,4,5,6,7,8,9,10];
+            for(let i=0;i<data.length;i++)
+            {
+                if(data[i]%2==0)
+                console.log(data[i]);
+            }
+
+            //Create a array with five city names and print it in reverse order
+
+            let city=["Pune","Hyderabad","Lucknow","Mumbai","Chennai"];
+            for(let i=data.length-1;i>=0;i--)
+            {
+                console.log(city[i]);
+            }
+        </script>
+
+
+
+    </body>
+</html>
